@@ -1,11 +1,11 @@
 {
   "name": "@genuin/aerospike-adapter",
-  "version": "7.0.0",
+  "version": "0.0.1",
   "description": "The Socket.IO Aerospike adapter, allowing to broadcast events between several Socket.IO servers",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sagarpshah/socket.io-redis-adapter.git"
+    "url": "git@github.com:sagarpshah/socket.io-aerospike-adapter.git"
   },
   "files": [
     "dist/"
@@ -13,6 +13,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "format:check": "prettier --parser typescript --check 'lib/**/*.ts' 'test/**/*.ts'",
+    "format:fix": "prettier --parser typescript --write 'lib/**/*.ts' 'test/**/*.ts'",
     "prepack": "tsc"
   },
   "dependencies": {
